@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Leonardo Mandelli - Trocar Cor</title>
+</head>
+
+<body>
+    <header>
+        <h1><span id="text_red">Trocar Cor</span> <span id="text_green">de Fundo </span><span id="text_yellow">-</span> <span id="text_blue">Leonardo Mandelli</span></h1>
+    </header>
+    <main>
+        <div class="container_main">
+            <button class="button_red" onclick="trocarCor('red')">Vermelho</button>
+            <button class="button_green" onclick="trocarCor('green')">Verde</button>
+            <button class="button_blue" onclick="trocarCor('blue')">Azul</button>
+            <button class="button_yellow" onclick="trocarCor('yellow')">Amarelo</button>
+            <button onclick="corAleatoria()">Cor aleatória</button>
+            <input class="value_color" type="text" placeholder="Digite uma cor #HEX">
+            <button onclick="corPersonalizada()">⬆ Aplicar cor ⬆</button>
+            <input type="color" onchange="trocarCor(this.value)">
+            <input type="file" accept="image/*" onchange="imagemArquivo(this.files[0])">
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
